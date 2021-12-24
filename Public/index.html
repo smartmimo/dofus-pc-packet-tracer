@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+    <script src="jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/2.1.0/json2html.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <button onclick="c.send('start')">Start</button>
+        <p><span class="packetTitle"></span><i class='fa fa-copy' style='margin-left:5px;'onclick='copy($(".packetTitle").html())'></i></p>
+    </header>
+    <hr />
+
+    <div id="main">
+        <div id="container"></div>
+        <div id="jsonviewer"></div>
+    </div>
+    <script src='jsonviewer.js'></script>
+    <script src='main.js'></script>
+</body>
